@@ -35,3 +35,8 @@ test('multiply -2 * 2.5 to equal -5', () => {
   expect(calculator.multiply(-2, 2.5)).toBe(-5);
 });
 
+//Task 3
+test("divide(10, 0) should throw an error", () => {
+  expect(() => calculator.divide(10, 0)).toThrow("Cannot divide by zero");
+});
+
